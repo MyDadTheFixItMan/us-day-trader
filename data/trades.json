@@ -21,5 +21,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "Stop loss"
+ },
+ {
+  "id": 2,
+  "date": "2026-11-10",
+  "sym": "AKAM",
+  "qty": 30,
+  "entry_time": "2026-11-10T09:45:00-05:00",
+  "entry_price": 81.86,
+  "exit_time": "2026-11-10T15:50:00-05:00",
+  "exit_price": 83.66,
+  "initial_stop": 79.34,
+  "fees": 0.0,
+  "gross": 54.0,
+  "net": 54.0,
+  "pct": 2.2,
+  "r": 0.71,
+  "rvol": 7.95,
+  "gap_pct": -0.55,
+  "stop_pct": 3.08,
+  "market_pct": -0.03,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "End of day exit"
  }
 ]
