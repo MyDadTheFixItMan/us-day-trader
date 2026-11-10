@@ -48,7 +48,7 @@ jobs:
               git pull -q --rebase origin main && git push -q || echo "push failed, will retry"
             fi
             hm=$(TZ=America/New_York date +%H%M); dow=$(TZ=America/New_York date +%u)
-            phase=$(python -c "import json;print(json.load(open('data/state.json'))['day'].get('phase',''))" 2>/dev/null)
+            phase=$(python -c "import json;print(json.load(open('data/state.json'))['day'].get('phase',''))" 2>/dev/null || true)
             [ "$dow" -ge 6 ] && break
             [ "$hm" -ge 1700 ] && break
             [ "$phase" = "closed" ] && [ "$hm" -ge 0935 ] && break
