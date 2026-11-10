@@ -1,0 +1,25 @@
+{
+ "start_capital": 10000,
+ "cash": 10000,
+ "created": "2026-11-10T15:25:56.794810-05:00",
+ "positions": [],
+ "daily": [],
+ "day": {
+  "date": "2026-11-10",
+  "phase": "waiting_open",
+  "start_equity": 10000,
+  "universe_size": 501,
+  "watchlist": [],
+  "entered": [],
+  "realized": 0.0,
+  "losses_in_row": 0,
+  "no_new_entries": false,
+  "market_change_pct": null,
+  "last_ts": null,
+  "log": [
+   "15:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
+ },
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-10T15:25:56.794810-05:00"
+}
