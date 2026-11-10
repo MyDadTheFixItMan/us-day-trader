@@ -1,25 +1,107 @@
 {
  "start_capital": 10000,
- "cash": 10000,
+ "cash": 7446.74,
  "created": "2026-11-10T15:25:56.794810-05:00",
- "positions": [],
+ "positions": [
+  {
+   "sym": "AKAM",
+   "qty": 30,
+   "entry": 81.86,
+   "entry_time": "2026-11-10T09:45:00-05:00",
+   "stop": 79.34,
+   "initial_stop": 79.34,
+   "risk_ps": 2.52,
+   "high": 84.13500213623047,
+   "last": 83.83000183105469,
+   "fees": 0.0,
+   "rvol": 7.95,
+   "atr": 5.0279,
+   "stop_note": "initial",
+   "gap_pct": -0.55,
+   "stop_pct": 3.08,
+   "market_pct": -0.03,
+   "news_cat": null,
+   "news_headline": null
+  }
+ ],
  "daily": [],
  "day": {
   "date": "2026-11-10",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 10000,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
+  "watchlist": [
+   {
+    "sym": "TTWO",
+    "rvol": 8.21,
+    "or_high": 229.4626007080078,
+    "or_low": 217.72500610351562,
+    "or_open": 218.17999267578125,
+    "or_close": 219.1750030517578,
+    "atr": 7.5114,
+    "gap_pct": 5.2,
+    "news": null
+   },
+   {
+    "sym": "AKAM",
+    "rvol": 7.95,
+    "or_high": 81.80500030517578,
+    "or_low": 78.4000015258789,
+    "or_open": 79.8499984741211,
+    "or_close": 81.80500030517578,
+    "atr": 5.0279,
+    "gap_pct": -0.55,
+    "news": null
+   },
+   {
+    "sym": "ONTO",
+    "rvol": 5.06,
+    "or_high": 206.10000610351562,
+    "or_low": 196.3070068359375,
+    "or_open": 200.49000549316406,
+    "or_close": 200.57000732421875,
+    "atr": 17.5061,
+    "gap_pct": 3.32,
+    "news": null
+   }
+  ],
+  "entered": [
+   "AKAM",
+   "ONTO"
+  ],
+  "realized": -97.46,
+  "losses_in_row": 1,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": -0.03,
+  "last_ts": "2026-11-10T15:25:00-05:00",
   "log": [
-   "15:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "15:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: TTWO (8.21x), AKAM (7.95x), ONTO (5.06x)",
+   "09:45 BUY 30 AKAM @ $81.860, stop $79.340 (breakout above $81.805)",
+   "10:25 BUY 11 ONTO @ $206.220, stop $197.460 (breakout above $206.100)",
+   "10:50 SELL 11 ONTO @ $197.360 (Stop loss) net $-97.46"
+  ],
+  "tracks": {
+   "TTWO": {
+    "pv": 1475597395.1391454,
+    "v": 6635091.0,
+    "low": 207.39999389648438,
+    "vwap": 222.3929400725846
+   },
+   "AKAM": {
+    "pv": 1566249333.7893596,
+    "v": 19124460.0,
+    "low": 78.4000015258789,
+    "vwap": 81.89770240777305
+   },
+   "ONTO": {
+    "pv": 540350752.0834707,
+    "v": 2739319.0,
+    "low": 192.57040405273438,
+    "vwap": 197.25733004570503
+   }
+  }
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-10T15:25:56.794810-05:00"
+ "status": "Past the entry cut-off. Managing open trades until the close.",
+ "last_run": "2026-11-10T15:30:06.179307-05:00"
 }
