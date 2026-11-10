@@ -1,0 +1,57 @@
+name: US day trader
+
+# One job runs the trader every 5 minutes through the US trading day. A job can
+# last at most 6 hours and the session is 6.5, so a second start queues behind
+# the first and carries on to the close. GitHub schedules are UTC: 13:05 UTC is
+# 9:05am New York in summer (8:05am in winter, when the job waits for 9:00).
+# Later starts are backups: they queue and exit fast if the day is done.
+on:
+  schedule:
+    - cron: "5 13 * * 1-5"
+    - cron: "5 14,17,19 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trader
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: bot/requirements.txt
+      - run: pip install -r bot/requirements.txt
+      - name: Trade every 5 minutes until the day is done
+        env:
+          PYTHONWARNINGS: ignore
+        run: |
+          git config user.name "us-day-trader"
+          git config user.email "actions@users.noreply.github.com"
+          start=$(date +%s)
+          while true; do
+            git pull -q --rebase origin main || true
+            python bot/trader.py || echo "cycle failed, will retry"
+            git add data
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Trader update $(TZ=America/New_York date '+%Y-%m-%d %H:%M') New York"
+              git pull -q --rebase origin main && git push -q || echo "push failed, will retry"
+            fi
+            hm=$(TZ=America/New_York date +%H%M); dow=$(TZ=America/New_York date +%u)
+            phase=$(python -c "import json;print(json.load(open('data/state.json'))['day'].get('phase',''))" 2>/dev/null)
+            [ "$dow" -ge 6 ] && break
+            [ "$hm" -ge 1700 ] && break
+            [ "$phase" = "closed" ] && [ "$hm" -ge 0935 ] && break
+            [ $(( $(date +%s) - start )) -gt 20400 ] && break   # stop before the 6h job limit
+            sleep $(( 300 - $(date +%s) % 300 + 5 ))            # wake on the next 5-minute mark
+          done
