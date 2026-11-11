@@ -14,89 +14,23 @@
   }
  ],
  "day": {
-  "date": "2026-11-10",
-  "phase": "closed",
-  "start_equity": 10000,
+  "date": "2026-11-11",
+  "phase": "waiting_open",
+  "start_equity": 9956.54,
   "universe_size": 501,
-  "watchlist": [
-   {
-    "sym": "TTWO",
-    "rvol": 8.21,
-    "or_high": 229.4626007080078,
-    "or_low": 217.72500610351562,
-    "or_open": 218.17999267578125,
-    "or_close": 219.1750030517578,
-    "atr": 7.5114,
-    "gap_pct": 5.2,
-    "news": null
-   },
-   {
-    "sym": "AKAM",
-    "rvol": 7.95,
-    "or_high": 81.80500030517578,
-    "or_low": 78.4000015258789,
-    "or_open": 79.8499984741211,
-    "or_close": 81.80500030517578,
-    "atr": 5.0279,
-    "gap_pct": -0.55,
-    "news": null
-   },
-   {
-    "sym": "ONTO",
-    "rvol": 5.06,
-    "or_high": 206.10000610351562,
-    "or_low": 196.3070068359375,
-    "or_open": 200.49000549316406,
-    "or_close": 200.57000732421875,
-    "atr": 17.5061,
-    "gap_pct": 3.32,
-    "news": null
-   }
-  ],
-  "entered": [
-   "AKAM",
-   "ONTO"
-  ],
-  "realized": -43.46,
+  "watchlist": [],
+  "entered": [],
+  "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": -0.03,
-  "last_ts": "2026-11-10T15:50:00-05:00",
+  "market_change_pct": null,
+  "last_ts": null,
   "log": [
-   "15:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "Stocks in play: TTWO (8.21x), AKAM (7.95x), ONTO (5.06x)",
-   "09:45 BUY 30 AKAM @ $81.860, stop $79.340 (breakout above $81.805)",
-   "10:25 BUY 11 ONTO @ $206.220, stop $197.460 (breakout above $206.100)",
-   "10:50 SELL 11 ONTO @ $197.360 (Stop loss) net $-97.46",
-   "15:50 SELL 30 AKAM @ $83.660 (End of day exit) net $+54.00",
-   "15:50 Day closed. Equity $9,956.54 (-43.46).",
-   "15:55 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {
-   "TTWO": {
-    "pv": 1572424096.4858859,
-    "v": 7066074.0,
-    "low": 207.39999389648438,
-    "vwap": 222.53150709798481
-   },
-   "AKAM": {
-    "pv": 3275007213.8706913,
-    "v": 39486781.0,
-    "low": 78.4000015258789,
-    "vwap": 82.93933136435435
-   },
-   "ONTO": {
-    "pv": 568039011.3186136,
-    "v": 2880773.0,
-    "low": 192.57040405273438,
-    "vwap": 197.18284339606544
-   }
-  },
-  "end_equity": 9956.54,
-  "reviewed": true
+   "15:09 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Day finished. Equity $9,956.54",
- "last_run": "2026-11-10T15:55:06.149702-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-11T15:09:24.331767-05:00",
  "learning": {
   "risk_multiplier": 0.75,
   "blocks": [],
