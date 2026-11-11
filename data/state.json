@@ -15,7 +15,7 @@
  ],
  "day": {
   "date": "2026-11-11",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 9956.54,
   "universe_size": 501,
   "watchlist": [],
@@ -23,14 +23,16 @@
   "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": null,
+  "market_change_pct": -0.55,
   "last_ts": null,
   "log": [
-   "15:09 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "15:09 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "No stock met the in-play rules today. No trades."
+  ],
+  "tracks": {}
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-11T15:09:24.331767-05:00",
+ "status": "Past the entry cut-off. Managing open trades until the close.",
+ "last_run": "2026-11-11T15:15:05.869236-05:00",
  "learning": {
   "risk_multiplier": 0.75,
   "blocks": [],
