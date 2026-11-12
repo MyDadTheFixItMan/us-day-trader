@@ -22,8 +22,8 @@
   }
  ],
  "day": {
-  "date": "2026-11-11",
-  "phase": "closed",
+  "date": "2026-11-12",
+  "phase": "waiting_open",
   "start_equity": 9956.54,
   "universe_size": 501,
   "watchlist": [],
@@ -31,20 +31,14 @@
   "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": -0.55,
+  "market_change_pct": null,
   "last_ts": null,
   "log": [
-   "15:09 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "No stock met the in-play rules today. No trades.",
-   "16:30 Day closed. Equity $9,956.54 (+0.00).",
-   "16:30 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {},
-  "end_equity": 9956.54,
-  "reviewed": true
+   "15:45 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Day finished. Equity $9,956.54",
- "last_run": "2026-11-11T16:30:05.724408-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-12T15:45:35.042433-05:00",
  "learning": {
   "risk_multiplier": 0.75,
   "blocks": [],
