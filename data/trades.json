@@ -44,5 +44,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "End of day exit"
+ },
+ {
+  "id": 3,
+  "date": "2026-11-12",
+  "sym": "HUBS",
+  "qty": 10,
+  "entry_time": "2026-11-12T09:55:00-05:00",
+  "entry_price": 214.19,
+  "exit_time": "2026-11-12T15:50:00-05:00",
+  "exit_price": 215.11,
+  "initial_stop": 207.27,
+  "fees": 0.0,
+  "gross": 9.2,
+  "net": 9.2,
+  "pct": 0.43,
+  "r": 0.13,
+  "rvol": 3.75,
+  "gap_pct": 3.0,
+  "stop_pct": 3.23,
+  "market_pct": 0.06,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "End of day exit"
  }
 ]

@@ -1,29 +1,8 @@
 {
  "start_capital": 10000,
- "cash": 7814.64,
+ "cash": 9965.74,
  "created": "2026-11-10T15:25:56.794810-05:00",
- "positions": [
-  {
-   "sym": "HUBS",
-   "qty": 10,
-   "entry": 214.19,
-   "entry_time": "2026-11-12T09:55:00-05:00",
-   "stop": 207.27,
-   "initial_stop": 207.27,
-   "risk_ps": 6.92,
-   "high": 219.75999450683594,
-   "last": 214.86000061035156,
-   "fees": 0.0,
-   "rvol": 3.75,
-   "atr": 13.8364,
-   "stop_note": "initial",
-   "gap_pct": 3.0,
-   "stop_pct": 3.23,
-   "market_pct": 0.06,
-   "news_cat": null,
-   "news_headline": null
-  }
- ],
+ "positions": [],
  "daily": [
   {
    "date": "2026-11-10",
@@ -40,11 +19,19 @@
    "pnl": 0.0,
    "trades": 0,
    "market_change_pct": -0.55
+  },
+  {
+   "date": "2026-11-12",
+   "start_equity": 9956.54,
+   "end_equity": 9965.74,
+   "pnl": 9.2,
+   "trades": 1,
+   "market_change_pct": 0.06
   }
  ],
  "day": {
   "date": "2026-11-12",
-  "phase": "trading",
+  "phase": "closed",
   "start_equity": 9956.54,
   "universe_size": 501,
   "watchlist": [
@@ -63,29 +50,34 @@
   "entered": [
    "HUBS"
   ],
-  "realized": 0.0,
+  "realized": 9.2,
   "losses_in_row": 0,
   "no_new_entries": false,
   "market_change_pct": 0.06,
-  "last_ts": "2026-11-12T15:45:00-05:00",
+  "last_ts": "2026-11-12T15:50:00-05:00",
   "log": [
    "15:45 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
    "Stocks in play: HUBS (3.75x)",
-   "09:55 BUY 10 HUBS @ $214.190, stop $207.270 (breakout above $214.070)"
+   "09:55 BUY 10 HUBS @ $214.190, stop $207.270 (breakout above $214.070)",
+   "15:50 SELL 10 HUBS @ $215.110 (End of day exit) net $+9.20",
+   "15:50 Day closed. Equity $9,965.74 (+9.20).",
+   "15:55 Daily review done. See 'Learning from losses' on the dashboard."
   ],
   "tracks": {
    "HUBS": {
-    "pv": 388593162.11831665,
-    "v": 1809050.0,
+    "pv": 400035877.5684204,
+    "v": 1862213.0,
     "low": 205.0500030517578,
-    "vwap": 214.80509776861703
+    "vwap": 214.8174658690603
    }
-  }
+  },
+  "end_equity": 9965.74,
+  "reviewed": true
  },
- "status": "Past the entry cut-off. Managing open trades until the close.",
- "last_run": "2026-11-12T15:50:06.244065-05:00",
+ "status": "Day finished. Equity $9,965.74",
+ "last_run": "2026-11-12T15:55:06.168916-05:00",
  "learning": {
-  "risk_multiplier": 0.75,
+  "risk_multiplier": 1.0,
   "blocks": [],
   "lessons": [
    {
@@ -102,6 +94,10 @@
    {
     "date": "2026-11-10",
     "text": "Cut risk per trade to 0.75% of equity after a losing day (-43.46)."
+   },
+   {
+    "date": "2026-11-12",
+    "text": "Raised risk per trade to 1.00% of equity after a winning day (+9.20)."
    }
   ],
   "buckets": [
@@ -116,10 +112,10 @@
    {
     "feature": "Entry time",
     "label": "before 10:00",
-    "n": 1,
+    "n": 2,
     "win_rate": 100,
-    "avg_r": 0.71,
-    "net": 54.0
+    "avg_r": 0.42,
+    "net": 63.2
    },
    {
     "feature": "Market at open",
@@ -130,12 +126,20 @@
     "net": -43.46
    },
    {
+    "feature": "Market at open",
+    "label": "market up",
+    "n": 1,
+    "win_rate": 100,
+    "avg_r": 0.13,
+    "net": 9.2
+   },
+   {
     "feature": "Opening gap",
     "label": "gap 2\u20135%",
-    "n": 1,
-    "win_rate": 0,
-    "avg_r": -1.01,
-    "net": -97.46
+    "n": 2,
+    "win_rate": 50,
+    "avg_r": -0.44,
+    "net": -88.26
    },
    {
     "feature": "Opening gap",
@@ -148,10 +152,18 @@
    {
     "feature": "Overnight news",
     "label": "no news",
-    "n": 2,
-    "win_rate": 50,
-    "avg_r": -0.15,
-    "net": -43.46
+    "n": 3,
+    "win_rate": 67,
+    "avg_r": -0.06,
+    "net": -34.26
+   },
+   {
+    "feature": "Relative volume",
+    "label": "3\u20135\u00d7 volume",
+    "n": 1,
+    "win_rate": 100,
+    "avg_r": 0.13,
+    "net": 9.2
    },
    {
     "feature": "Relative volume",
@@ -164,18 +176,18 @@
    {
     "feature": "Share price",
     "label": "over $20",
-    "n": 2,
-    "win_rate": 50,
-    "avg_r": -0.15,
-    "net": -43.46
+    "n": 3,
+    "win_rate": 67,
+    "avg_r": -0.06,
+    "net": -34.26
    },
    {
     "feature": "Stop distance",
     "label": "stop over 2%",
-    "n": 2,
-    "win_rate": 50,
-    "avg_r": -0.15,
-    "net": -43.46
+    "n": 3,
+    "win_rate": 67,
+    "avg_r": -0.06,
+    "net": -34.26
    }
   ]
  }
