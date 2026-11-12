@@ -1,8 +1,29 @@
 {
  "start_capital": 10000,
- "cash": 9956.54,
+ "cash": 7814.64,
  "created": "2026-11-10T15:25:56.794810-05:00",
- "positions": [],
+ "positions": [
+  {
+   "sym": "HUBS",
+   "qty": 10,
+   "entry": 214.19,
+   "entry_time": "2026-11-12T09:55:00-05:00",
+   "stop": 207.27,
+   "initial_stop": 207.27,
+   "risk_ps": 6.92,
+   "high": 219.75999450683594,
+   "last": 214.86000061035156,
+   "fees": 0.0,
+   "rvol": 3.75,
+   "atr": 13.8364,
+   "stop_note": "initial",
+   "gap_pct": 3.0,
+   "stop_pct": 3.23,
+   "market_pct": 0.06,
+   "news_cat": null,
+   "news_headline": null
+  }
+ ],
  "daily": [
   {
    "date": "2026-11-10",
@@ -23,22 +44,46 @@
  ],
  "day": {
   "date": "2026-11-12",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 9956.54,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
+  "watchlist": [
+   {
+    "sym": "HUBS",
+    "rvol": 3.75,
+    "or_high": 214.07000732421875,
+    "or_low": 205.0500030517578,
+    "or_open": 208.97000122070312,
+    "or_close": 209.2449951171875,
+    "atr": 13.8364,
+    "gap_pct": 3.0,
+    "news": null
+   }
+  ],
+  "entered": [
+   "HUBS"
+  ],
   "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": 0.06,
+  "last_ts": "2026-11-12T15:45:00-05:00",
   "log": [
-   "15:45 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "15:45 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: HUBS (3.75x)",
+   "09:55 BUY 10 HUBS @ $214.190, stop $207.270 (breakout above $214.070)"
+  ],
+  "tracks": {
+   "HUBS": {
+    "pv": 388593162.11831665,
+    "v": 1809050.0,
+    "low": 205.0500030517578,
+    "vwap": 214.80509776861703
+   }
+  }
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-12T15:45:35.042433-05:00",
+ "status": "Past the entry cut-off. Managing open trades until the close.",
+ "last_run": "2026-11-12T15:50:06.244065-05:00",
  "learning": {
   "risk_multiplier": 0.75,
   "blocks": [],
