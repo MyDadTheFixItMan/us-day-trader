@@ -30,52 +30,23 @@
   }
  ],
  "day": {
-  "date": "2026-11-12",
-  "phase": "closed",
-  "start_equity": 9956.54,
+  "date": "2026-11-13",
+  "phase": "waiting_open",
+  "start_equity": 9965.74,
   "universe_size": 501,
-  "watchlist": [
-   {
-    "sym": "HUBS",
-    "rvol": 3.75,
-    "or_high": 214.07000732421875,
-    "or_low": 205.0500030517578,
-    "or_open": 208.97000122070312,
-    "or_close": 209.2449951171875,
-    "atr": 13.8364,
-    "gap_pct": 3.0,
-    "news": null
-   }
-  ],
-  "entered": [
-   "HUBS"
-  ],
-  "realized": 9.2,
+  "watchlist": [],
+  "entered": [],
+  "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": 0.06,
-  "last_ts": "2026-11-12T15:50:00-05:00",
+  "market_change_pct": null,
+  "last_ts": null,
   "log": [
-   "15:45 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "Stocks in play: HUBS (3.75x)",
-   "09:55 BUY 10 HUBS @ $214.190, stop $207.270 (breakout above $214.070)",
-   "15:50 SELL 10 HUBS @ $215.110 (End of day exit) net $+9.20",
-   "15:50 Day closed. Equity $9,965.74 (+9.20).",
-   "15:55 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {
-   "HUBS": {
-    "pv": 400035877.5684204,
-    "v": 1862213.0,
-    "low": 205.0500030517578,
-    "vwap": 214.8174658690603
-   }
-  },
-  "end_equity": 9965.74,
-  "reviewed": true
+   "15:26 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Day finished. Equity $9,965.74",
- "last_run": "2026-11-12T15:55:06.168916-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-13T15:26:55.533304-05:00",
  "learning": {
   "risk_multiplier": 1.0,
   "blocks": [],
