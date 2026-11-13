@@ -67,5 +67,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "End of day exit"
+ },
+ {
+  "id": 4,
+  "date": "2026-11-13",
+  "sym": "KDP",
+  "qty": 67,
+  "entry_time": "2026-11-13T09:45:00-05:00",
+  "entry_price": 36.74,
+  "exit_time": "2026-11-13T10:10:00-05:00",
+  "exit_price": 36.06,
+  "initial_stop": 36.08,
+  "fees": 0.0,
+  "gross": -45.56,
+  "net": -45.56,
+  "pct": -1.85,
+  "r": -1.03,
+  "rvol": 14.05,
+  "gap_pct": 1.04,
+  "stop_pct": 1.8,
+  "market_pct": 0.41,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]

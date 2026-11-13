@@ -1,8 +1,29 @@
 {
  "start_capital": 10000,
- "cash": 9965.74,
+ "cash": 7511.8,
  "created": "2026-11-10T15:25:56.794810-05:00",
- "positions": [],
+ "positions": [
+  {
+   "sym": "SO",
+   "qty": 26,
+   "entry": 92.63,
+   "entry_time": "2026-11-13T09:45:00-05:00",
+   "stop": 91.7,
+   "initial_stop": 91.7,
+   "risk_ps": 0.93,
+   "high": 94.54499816894531,
+   "last": 93.62999725341797,
+   "fees": 0.0,
+   "rvol": 5.22,
+   "atr": 1.8829,
+   "stop_note": "initial",
+   "gap_pct": 0.0,
+   "stop_pct": 1.0,
+   "market_pct": 0.41,
+   "news_cat": null,
+   "news_headline": null
+  }
+ ],
  "daily": [
   {
    "date": "2026-11-10",
@@ -31,22 +52,83 @@
  ],
  "day": {
   "date": "2026-11-13",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 9965.74,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
+  "watchlist": [
+   {
+    "sym": "KDP",
+    "rvol": 14.05,
+    "or_high": 36.70000076293945,
+    "or_low": 35.6150016784668,
+    "or_open": 35.790000915527344,
+    "or_close": 36.70000076293945,
+    "atr": 1.3164,
+    "gap_pct": 1.04,
+    "news": null
+   },
+   {
+    "sym": "SO",
+    "rvol": 5.22,
+    "or_high": 92.56999969482422,
+    "or_low": 92.17900085449219,
+    "or_open": 92.47000122070312,
+    "or_close": 92.55999755859375,
+    "atr": 1.8829,
+    "gap_pct": 0.0,
+    "news": null
+   },
+   {
+    "sym": "WFC",
+    "rvol": 3.08,
+    "or_high": 86.86000061035156,
+    "or_low": 86.33999633789062,
+    "or_open": 86.48999786376953,
+    "or_close": 86.66000366210938,
+    "atr": 2.0007,
+    "gap_pct": 0.85,
+    "news": null
+   }
+  ],
+  "entered": [
+   "KDP",
+   "SO"
+  ],
+  "realized": -45.56,
+  "losses_in_row": 1,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": 0.41,
+  "last_ts": "2026-11-13T15:25:00-05:00",
   "log": [
-   "15:26 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "15:26 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: KDP (14.05x), SO (5.22x), WFC (3.08x)",
+   "09:45 BUY 67 KDP @ $36.740, stop $36.080 (breakout above $36.700)",
+   "09:45 BUY 26 SO @ $92.630, stop $91.700 (breakout above $92.570)",
+   "10:10 SELL 67 KDP @ $36.060 (Stop loss) net $-45.56"
+  ],
+  "tracks": {
+   "WFC": {
+    "pv": 553926721.042959,
+    "v": 6434843.0,
+    "low": 85.33000183105469,
+    "vwap": 86.08239875362288
+   },
+   "KDP": {
+    "pv": 1579670754.9635854,
+    "v": 43459456.0,
+    "low": 35.6150016784668,
+    "vwap": 36.34814837451222
+   },
+   "SO": {
+    "pv": 2293538947.483086,
+    "v": 24439819.0,
+    "low": 92.17900085449219,
+    "vwap": 93.8443507901219
+   }
+  }
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-13T15:26:55.533304-05:00",
+ "status": "Past the entry cut-off. Managing open trades until the close.",
+ "last_run": "2026-11-13T15:30:06.007222-05:00",
  "learning": {
   "risk_multiplier": 1.0,
   "blocks": [],
