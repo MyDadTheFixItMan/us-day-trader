@@ -1,6 +1,6 @@
 {
  "start_capital": 10000,
- "cash": 9942.28,
+ "cash": 9891.51,
  "created": "2026-11-10T15:25:56.794810-05:00",
  "positions": [],
  "daily": [
@@ -35,28 +35,85 @@
    "pnl": -23.46,
    "trades": 2,
    "market_change_pct": 0.41
+  },
+  {
+   "date": "2026-11-16",
+   "start_equity": 9942.28,
+   "end_equity": 9891.51,
+   "pnl": -50.77,
+   "trades": 2,
+   "market_change_pct": 1.31
   }
  ],
  "day": {
   "date": "2026-11-16",
-  "phase": "waiting_open",
+  "phase": "closed",
   "start_equity": 9942.28,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
+  "watchlist": [
+   {
+    "sym": "TSN",
+    "rvol": 5.73,
+    "or_high": 64.93000030517578,
+    "or_low": 60.459999084472656,
+    "or_open": 60.900001525878906,
+    "or_close": 64.87999725341797,
+    "atr": 1.585,
+    "gap_pct": 3.54,
+    "news": null
+   },
+   {
+    "sym": "TSCO",
+    "rvol": 4.04,
+    "or_high": 38.025001525878906,
+    "or_low": 37.03499984741211,
+    "or_open": 37.220001220703125,
+    "or_close": 37.79499816894531,
+    "atr": 1.3379,
+    "gap_pct": 2.11,
+    "news": null
+   }
+  ],
+  "entered": [
+   "TSN",
+   "TSCO"
+  ],
+  "realized": -50.77,
+  "losses_in_row": 2,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": 1.31,
+  "last_ts": "2026-11-16T15:50:00-05:00",
   "log": [
-   "17:50 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "17:50 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: TSN (5.73x), TSCO (4.04x)",
+   "09:45 BUY 38 TSN @ $64.980, stop $64.180 (breakout above $64.930)",
+   "09:45 BUY 65 TSCO @ $38.060, stop $37.390 (breakout above $38.025)",
+   "09:55 SELL 38 TSN @ $64.140 (Stop loss) net $-31.92",
+   "15:50 SELL 65 TSCO @ $37.770 (End of day exit) net $-18.85",
+   "15:50 Day closed. Equity $9,891.51 (-50.77).",
+   "18:19 Daily review done. See 'Learning from losses' on the dashboard."
+  ],
+  "tracks": {
+   "TSCO": {
+    "pv": 435811803.8604925,
+    "v": 11481321.0,
+    "low": 37.03499984741211,
+    "vwap": 37.95833283125631
+   },
+   "TSN": {
+    "pv": 890310719.2988776,
+    "v": 14089620.0,
+    "low": 60.459999084472656,
+    "vwap": 63.18912215509557
+   }
+  },
+  "end_equity": 9891.51,
+  "reviewed": true
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-16T17:50:53.100031-05:00",
+ "status": "Day finished. Equity $9,891.51",
+ "last_run": "2026-11-16T18:19:00.725134-05:00",
  "learning": {
-  "risk_multiplier": 0.75,
+  "risk_multiplier": 0.562,
   "blocks": [],
   "lessons": [
    {
@@ -76,6 +133,24 @@
     "notes": [
      "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
     ]
+   },
+   {
+    "trade_id": 6,
+    "date": "2026-11-16",
+    "sym": "TSN",
+    "net": -31.92,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
+   },
+   {
+    "trade_id": 7,
+    "date": "2026-11-16",
+    "sym": "TSCO",
+    "net": -18.85,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
    }
   ],
   "changes": [
@@ -90,6 +165,10 @@
    {
     "date": "2026-11-13",
     "text": "Cut risk per trade to 0.75% of equity after a losing day (-23.46)."
+   },
+   {
+    "date": "2026-11-16",
+    "text": "Cut risk per trade to 0.56% of equity after a losing day (-50.77)."
    }
   ],
   "buckets": [
@@ -104,10 +183,10 @@
    {
     "feature": "Entry time",
     "label": "before 10:00",
-    "n": 4,
-    "win_rate": 75,
-    "avg_r": 0.18,
-    "net": 39.74
+    "n": 6,
+    "win_rate": 50,
+    "avg_r": -0.13,
+    "net": -11.03
    },
    {
     "feature": "Market at open",
@@ -120,10 +199,10 @@
    {
     "feature": "Market at open",
     "label": "market up",
-    "n": 3,
-    "win_rate": 67,
-    "avg_r": 0.0,
-    "net": -14.26
+    "n": 5,
+    "win_rate": 40,
+    "avg_r": -0.29,
+    "net": -65.03
    },
    {
     "feature": "Opening gap",
@@ -136,10 +215,10 @@
    {
     "feature": "Opening gap",
     "label": "gap 2\u20135%",
-    "n": 2,
-    "win_rate": 50,
-    "avg_r": -0.44,
-    "net": -88.26
+    "n": 4,
+    "win_rate": 25,
+    "avg_r": -0.59,
+    "net": -139.03
    },
    {
     "feature": "Opening gap",
@@ -152,26 +231,26 @@
    {
     "feature": "Overnight news",
     "label": "no news",
-    "n": 5,
-    "win_rate": 60,
-    "avg_r": -0.06,
-    "net": -57.72
+    "n": 7,
+    "win_rate": 43,
+    "avg_r": -0.25,
+    "net": -108.49
    },
    {
     "feature": "Relative volume",
     "label": "3\u20135\u00d7 volume",
-    "n": 1,
-    "win_rate": 100,
-    "avg_r": 0.13,
-    "net": 9.2
+    "n": 2,
+    "win_rate": 50,
+    "avg_r": -0.15,
+    "net": -9.65
    },
    {
     "feature": "Relative volume",
     "label": "5\u201310\u00d7 volume",
-    "n": 3,
-    "win_rate": 67,
-    "avg_r": 0.2,
-    "net": -21.36
+    "n": 4,
+    "win_rate": 50,
+    "avg_r": -0.11,
+    "net": -53.28
    },
    {
     "feature": "Relative volume",
@@ -184,18 +263,18 @@
    {
     "feature": "Share price",
     "label": "over $20",
-    "n": 5,
-    "win_rate": 60,
-    "avg_r": -0.06,
-    "net": -57.72
+    "n": 7,
+    "win_rate": 43,
+    "avg_r": -0.25,
+    "net": -108.49
    },
    {
     "feature": "Stop distance",
     "label": "stop 1\u20132%",
-    "n": 2,
-    "win_rate": 50,
-    "avg_r": -0.06,
-    "net": -23.46
+    "n": 4,
+    "win_rate": 25,
+    "avg_r": -0.4,
+    "net": -74.23
    },
    {
     "feature": "Stop distance",
