@@ -159,5 +159,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "End of day exit"
+ },
+ {
+  "id": 8,
+  "date": "2026-11-17",
+  "sym": "DIS",
+  "qty": 20,
+  "entry_time": "2026-11-17T09:50:00-05:00",
+  "entry_price": 120.91,
+  "exit_time": "2026-11-17T10:55:00-05:00",
+  "exit_price": 119.55,
+  "initial_stop": 119.61,
+  "fees": 0.0,
+  "gross": -27.2,
+  "net": -27.2,
+  "pct": -1.12,
+  "r": -1.05,
+  "rvol": 4.29,
+  "gap_pct": 0.13,
+  "stop_pct": 1.08,
+  "market_pct": 0.76,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]
