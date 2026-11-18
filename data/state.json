@@ -1,6 +1,6 @@
 {
  "start_capital": 10000,
- "cash": 9864.31,
+ "cash": 9812.87,
  "created": "2026-11-10T15:25:56.794810-05:00",
  "positions": [],
  "daily": [
@@ -51,26 +51,142 @@
    "pnl": -27.2,
    "trades": 1,
    "market_change_pct": 0.76
+  },
+  {
+   "date": "2026-11-18",
+   "start_equity": 9864.31,
+   "end_equity": 9812.87,
+   "pnl": -51.44,
+   "trades": 4,
+   "market_change_pct": -0.0
   }
  ],
  "day": {
   "date": "2026-11-18",
-  "phase": "waiting_open",
+  "phase": "closed",
   "start_equity": 9864.31,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
+  "watchlist": [
+   {
+    "sym": "TGT",
+    "rvol": 8.04,
+    "or_high": 167.92999267578125,
+    "or_low": 159.9499969482422,
+    "or_open": 160.99000549316406,
+    "or_close": 167.44000244140625,
+    "atr": 5.5493,
+    "gap_pct": 0.92,
+    "news": null
+   },
+   {
+    "sym": "WELL",
+    "rvol": 7.09,
+    "or_high": 246.8300018310547,
+    "or_low": 241.97999572753906,
+    "or_open": 244.1699981689453,
+    "or_close": 246.46499633789062,
+    "atr": 5.0786,
+    "gap_pct": -0.65,
+    "news": null
+   },
+   {
+    "sym": "ETR",
+    "rvol": 7.05,
+    "or_high": 108.62000274658203,
+    "or_low": 106.91999816894531,
+    "or_open": 107.13999938964844,
+    "or_close": 108.62000274658203,
+    "atr": 2.2186,
+    "gap_pct": -0.4,
+    "news": null
+   },
+   {
+    "sym": "TJX",
+    "rvol": 7.03,
+    "or_high": 140.8000030517578,
+    "or_low": 134.0500030517578,
+    "or_open": 137.00999450683594,
+    "or_close": 140.50999450683594,
+    "atr": 4.0779,
+    "gap_pct": 5.51,
+    "news": null
+   },
+   {
+    "sym": "TTWO",
+    "rvol": 4.52,
+    "or_high": 221.0,
+    "or_low": 210.5,
+    "or_open": 212.63999938964844,
+    "or_close": 216.22500610351562,
+    "atr": 12.0264,
+    "gap_pct": 4.27,
+    "news": null,
+    "skipped": true
+   }
+  ],
+  "entered": [
+   "WELL",
+   "ETR",
+   "TJX",
+   "TGT"
+  ],
+  "realized": -51.44,
+  "losses_in_row": 4,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": -0.0,
+  "last_ts": "2026-11-18T15:50:00-05:00",
   "log": [
-   "16:21 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "16:21 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: TGT (8.04x), WELL (7.09x), ETR (7.05x), TJX (7.03x), TTWO (4.52x)",
+   "09:45 BUY 9 WELL @ $246.970, stop $244.430 (breakout above $246.830)",
+   "09:45 BUY 22 ETR @ $108.690, stop $107.580 (breakout above $108.620)",
+   "09:45 BUY 17 TJX @ $140.890, stop $138.850 (breakout above $140.800)",
+   "09:55 BUY 14 TGT @ $168.030, stop $165.250 (breakout above $167.930)",
+   "10:55 Skipped TTWO: not enough cash or risk room for a sensible size.",
+   "15:50 SELL 9 WELL @ $246.800 (End of day exit) net $-1.53",
+   "15:50 SELL 22 ETR @ $108.010 (End of day exit) net $-14.96",
+   "15:50 SELL 17 TJX @ $140.580 (End of day exit) net $-5.27",
+   "15:50 SELL 14 TGT @ $165.910 (End of day exit) net $-29.68",
+   "15:50 Day closed. Equity $9,812.87 (-51.44).",
+   "16:25 Daily review done. See 'Learning from losses' on the dashboard."
+  ],
+  "tracks": {
+   "TJX": {
+    "pv": 1966197239.9095812,
+    "v": 13877787.0,
+    "low": 134.0500030517578,
+    "vwap": 141.6794507589417
+   },
+   "TTWO": {
+    "pv": 6534039434.259478,
+    "v": 29925001.0,
+    "low": 210.5,
+    "vwap": 218.34717513491404
+   },
+   "WELL": {
+    "pv": 1285149273.7672067,
+    "v": 5203831.0,
+    "low": 241.97999572753906,
+    "vwap": 246.96214649691865
+   },
+   "TGT": {
+    "pv": 1766834887.882146,
+    "v": 10517000.0,
+    "low": 159.9499969482422,
+    "vwap": 167.9979925722303
+   },
+   "ETR": {
+    "pv": 260425495.08351383,
+    "v": 2407904.0,
+    "low": 106.91999816894531,
+    "vwap": 108.15443434767907
+   }
+  },
+  "end_equity": 9812.87,
+  "reviewed": true
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-18T16:21:45.899089-05:00",
+ "status": "Day finished. Equity $9,812.87",
+ "last_run": "2026-11-18T16:25:05.371414-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
@@ -119,6 +235,42 @@
     "notes": [
      "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
     ]
+   },
+   {
+    "trade_id": 9,
+    "date": "2026-11-18",
+    "sym": "WELL",
+    "net": -1.53,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
+   },
+   {
+    "trade_id": 10,
+    "date": "2026-11-18",
+    "sym": "ETR",
+    "net": -14.96,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
+   },
+   {
+    "trade_id": 11,
+    "date": "2026-11-18",
+    "sym": "TJX",
+    "net": -5.27,
+    "notes": [
+     "Big opening gap: much of the move had already happened before the breakout."
+    ]
+   },
+   {
+    "trade_id": 12,
+    "date": "2026-11-18",
+    "sym": "TGT",
+    "net": -29.68,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
    }
   ],
   "changes": [
@@ -155,10 +307,10 @@
    {
     "feature": "Entry time",
     "label": "before 10:00",
-    "n": 7,
-    "win_rate": 43,
-    "avg_r": -0.26,
-    "net": -38.23
+    "n": 11,
+    "win_rate": 27,
+    "avg_r": -0.31,
+    "net": -89.67
    },
    {
     "feature": "Market at open",
@@ -171,18 +323,18 @@
    {
     "feature": "Market at open",
     "label": "market up",
-    "n": 6,
-    "win_rate": 33,
-    "avg_r": -0.42,
-    "net": -92.23
+    "n": 10,
+    "win_rate": 20,
+    "avg_r": -0.41,
+    "net": -143.67
    },
    {
     "feature": "Opening gap",
     "label": "gap 0\u20132%",
-    "n": 3,
-    "win_rate": 33,
-    "avg_r": -0.39,
-    "net": -50.66
+    "n": 4,
+    "win_rate": 25,
+    "avg_r": -0.48,
+    "net": -80.34
    },
    {
     "feature": "Opening gap",
@@ -194,19 +346,27 @@
    },
    {
     "feature": "Opening gap",
-    "label": "gapped down",
+    "label": "gap over 5%",
     "n": 1,
-    "win_rate": 100,
-    "avg_r": 0.71,
-    "net": 54.0
+    "win_rate": 0,
+    "avg_r": -0.15,
+    "net": -5.27
+   },
+   {
+    "feature": "Opening gap",
+    "label": "gapped down",
+    "n": 3,
+    "win_rate": 33,
+    "avg_r": 0.01,
+    "net": 37.51
    },
    {
     "feature": "Overnight news",
     "label": "no news",
-    "n": 8,
-    "win_rate": 38,
-    "avg_r": -0.35,
-    "net": -135.69
+    "n": 12,
+    "win_rate": 25,
+    "avg_r": -0.37,
+    "net": -187.13
    },
    {
     "feature": "Relative volume",
@@ -219,10 +379,10 @@
    {
     "feature": "Relative volume",
     "label": "5\u201310\u00d7 volume",
-    "n": 4,
-    "win_rate": 50,
-    "avg_r": -0.11,
-    "net": -53.28
+    "n": 8,
+    "win_rate": 25,
+    "avg_r": -0.25,
+    "net": -104.72
    },
    {
     "feature": "Relative volume",
@@ -235,18 +395,18 @@
    {
     "feature": "Share price",
     "label": "over $20",
-    "n": 8,
-    "win_rate": 38,
-    "avg_r": -0.35,
-    "net": -135.69
+    "n": 12,
+    "win_rate": 25,
+    "avg_r": -0.37,
+    "net": -187.13
    },
    {
     "feature": "Stop distance",
     "label": "stop 1\u20132%",
-    "n": 5,
-    "win_rate": 20,
-    "avg_r": -0.53,
-    "net": -101.43
+    "n": 9,
+    "win_rate": 11,
+    "avg_r": -0.47,
+    "net": -152.87
    },
    {
     "feature": "Stop distance",
