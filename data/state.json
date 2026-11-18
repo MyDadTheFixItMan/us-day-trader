@@ -54,52 +54,23 @@
   }
  ],
  "day": {
-  "date": "2026-11-17",
-  "phase": "closed",
-  "start_equity": 9891.51,
+  "date": "2026-11-18",
+  "phase": "waiting_open",
+  "start_equity": 9864.31,
   "universe_size": 501,
-  "watchlist": [
-   {
-    "sym": "DIS",
-    "rvol": 4.29,
-    "or_high": 120.83000183105469,
-    "or_low": 118.25499725341797,
-    "or_open": 118.8499984741211,
-    "or_close": 119.26000213623047,
-    "atr": 2.5921,
-    "gap_pct": 0.13,
-    "news": null
-   }
-  ],
-  "entered": [
-   "DIS"
-  ],
-  "realized": -27.2,
-  "losses_in_row": 1,
+  "watchlist": [],
+  "entered": [],
+  "realized": 0.0,
+  "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": 0.76,
-  "last_ts": "2026-11-17T15:50:00-05:00",
+  "market_change_pct": null,
+  "last_ts": null,
   "log": [
-   "16:42 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "Stocks in play: DIS (4.29x)",
-   "09:50 BUY 20 DIS @ $120.910, stop $119.610 (breakout above $120.830)",
-   "10:55 SELL 20 DIS @ $119.550 (Stop loss) net $-27.20",
-   "15:50 Day closed. Equity $9,864.31 (-27.20).",
-   "16:50 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {
-   "DIS": {
-    "pv": 2013077138.5295086,
-    "v": 16852352.0,
-    "low": 116.12999725341797,
-    "vwap": 119.45377942078997
-   }
-  },
-  "end_equity": 9864.31,
-  "reviewed": true
+   "16:21 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Day finished. Equity $9,864.31",
- "last_run": "2026-11-17T16:50:05.616918-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-18T16:21:45.899089-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
