@@ -1,6 +1,6 @@
 {
  "start_capital": 10000,
- "cash": 9812.87,
+ "cash": 9767.06,
  "created": "2026-11-10T15:25:56.794810-05:00",
  "positions": [],
  "daily": [
@@ -59,26 +59,63 @@
    "pnl": -51.44,
    "trades": 4,
    "market_change_pct": -0.0
+  },
+  {
+   "date": "2026-11-19",
+   "start_equity": 9812.87,
+   "end_equity": 9767.06,
+   "pnl": -45.81,
+   "trades": 1,
+   "market_change_pct": 3.14
   }
  ],
  "day": {
   "date": "2026-11-19",
-  "phase": "waiting_open",
+  "phase": "closed",
   "start_equity": 9812.87,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
+  "watchlist": [
+   {
+    "sym": "P",
+    "rvol": 3.53,
+    "or_high": 112.23999786376953,
+    "or_low": 103.5,
+    "or_open": 106.30000305175781,
+    "or_close": 112.0,
+    "atr": 10.0551,
+    "gap_pct": 5.52,
+    "news": null
+   }
+  ],
+  "entered": [
+   "P"
+  ],
+  "realized": -45.81,
+  "losses_in_row": 1,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": 3.14,
+  "last_ts": "2026-11-19T15:50:00-05:00",
   "log": [
-   "16:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "16:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: P (3.53x)",
+   "09:45 BUY 9 P @ $112.310, stop $107.280 (breakout above $112.240)",
+   "15:00 SELL 9 P @ $107.220 (Stop loss) net $-45.81",
+   "15:50 Day closed. Equity $9,767.06 (-45.81).",
+   "16:30 Daily review done. See 'Learning from losses' on the dashboard."
+  ],
+  "tracks": {
+   "P": {
+    "pv": 1156574250.0539527,
+    "v": 10295298.0,
+    "low": 103.5,
+    "vwap": 112.34004591746181
+   }
+  },
+  "end_equity": 9767.06,
+  "reviewed": true
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-19T16:25:01.279288-05:00",
+ "status": "Day finished. Equity $9,767.06",
+ "last_run": "2026-11-19T16:30:06.313224-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
@@ -163,6 +200,15 @@
     "notes": [
      "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
     ]
+   },
+   {
+    "trade_id": 13,
+    "date": "2026-11-19",
+    "sym": "P",
+    "net": -45.81,
+    "notes": [
+     "Big opening gap: much of the move had already happened before the breakout."
+    ]
    }
   ],
   "changes": [
@@ -199,10 +245,10 @@
    {
     "feature": "Entry time",
     "label": "before 10:00",
-    "n": 11,
-    "win_rate": 27,
-    "avg_r": -0.31,
-    "net": -89.67
+    "n": 12,
+    "win_rate": 25,
+    "avg_r": -0.37,
+    "net": -135.48
    },
    {
     "feature": "Market at open",
@@ -215,10 +261,10 @@
    {
     "feature": "Market at open",
     "label": "market up",
-    "n": 10,
-    "win_rate": 20,
-    "avg_r": -0.41,
-    "net": -143.67
+    "n": 11,
+    "win_rate": 18,
+    "avg_r": -0.47,
+    "net": -189.48
    },
    {
     "feature": "Opening gap",
@@ -239,10 +285,10 @@
    {
     "feature": "Opening gap",
     "label": "gap over 5%",
-    "n": 1,
+    "n": 2,
     "win_rate": 0,
-    "avg_r": -0.15,
-    "net": -5.27
+    "avg_r": -0.58,
+    "net": -51.08
    },
    {
     "feature": "Opening gap",
@@ -255,18 +301,18 @@
    {
     "feature": "Overnight news",
     "label": "no news",
-    "n": 12,
-    "win_rate": 25,
-    "avg_r": -0.37,
-    "net": -187.13
+    "n": 13,
+    "win_rate": 23,
+    "avg_r": -0.42,
+    "net": -232.94
    },
    {
     "feature": "Relative volume",
     "label": "3\u20135\u00d7 volume",
-    "n": 3,
-    "win_rate": 33,
-    "avg_r": -0.45,
-    "net": -36.85
+    "n": 4,
+    "win_rate": 25,
+    "avg_r": -0.59,
+    "net": -82.66
    },
    {
     "feature": "Relative volume",
@@ -287,10 +333,10 @@
    {
     "feature": "Share price",
     "label": "over $20",
-    "n": 12,
-    "win_rate": 25,
-    "avg_r": -0.37,
-    "net": -187.13
+    "n": 13,
+    "win_rate": 23,
+    "avg_r": -0.42,
+    "net": -232.94
    },
    {
     "feature": "Stop distance",
@@ -303,10 +349,10 @@
    {
     "feature": "Stop distance",
     "label": "stop over 2%",
-    "n": 3,
-    "win_rate": 67,
-    "avg_r": -0.06,
-    "net": -34.26
+    "n": 4,
+    "win_rate": 50,
+    "avg_r": -0.3,
+    "net": -80.07
    }
   ]
  }

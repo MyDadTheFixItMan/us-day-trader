@@ -274,5 +274,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "End of day exit"
+ },
+ {
+  "id": 13,
+  "date": "2026-11-19",
+  "sym": "P",
+  "qty": 9,
+  "entry_time": "2026-11-19T09:45:00-05:00",
+  "entry_price": 112.31,
+  "exit_time": "2026-11-19T15:00:00-05:00",
+  "exit_price": 107.22,
+  "initial_stop": 107.28,
+  "fees": 0.0,
+  "gross": -45.81,
+  "net": -45.81,
+  "pct": -4.53,
+  "r": -1.01,
+  "rvol": 3.53,
+  "gap_pct": 5.52,
+  "stop_pct": 4.48,
+  "market_pct": 3.14,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]
