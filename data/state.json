@@ -62,131 +62,23 @@
   }
  ],
  "day": {
-  "date": "2026-11-18",
-  "phase": "closed",
-  "start_equity": 9864.31,
+  "date": "2026-11-19",
+  "phase": "waiting_open",
+  "start_equity": 9812.87,
   "universe_size": 501,
-  "watchlist": [
-   {
-    "sym": "TGT",
-    "rvol": 8.04,
-    "or_high": 167.92999267578125,
-    "or_low": 159.9499969482422,
-    "or_open": 160.99000549316406,
-    "or_close": 167.44000244140625,
-    "atr": 5.5493,
-    "gap_pct": 0.92,
-    "news": null
-   },
-   {
-    "sym": "WELL",
-    "rvol": 7.09,
-    "or_high": 246.8300018310547,
-    "or_low": 241.97999572753906,
-    "or_open": 244.1699981689453,
-    "or_close": 246.46499633789062,
-    "atr": 5.0786,
-    "gap_pct": -0.65,
-    "news": null
-   },
-   {
-    "sym": "ETR",
-    "rvol": 7.05,
-    "or_high": 108.62000274658203,
-    "or_low": 106.91999816894531,
-    "or_open": 107.13999938964844,
-    "or_close": 108.62000274658203,
-    "atr": 2.2186,
-    "gap_pct": -0.4,
-    "news": null
-   },
-   {
-    "sym": "TJX",
-    "rvol": 7.03,
-    "or_high": 140.8000030517578,
-    "or_low": 134.0500030517578,
-    "or_open": 137.00999450683594,
-    "or_close": 140.50999450683594,
-    "atr": 4.0779,
-    "gap_pct": 5.51,
-    "news": null
-   },
-   {
-    "sym": "TTWO",
-    "rvol": 4.52,
-    "or_high": 221.0,
-    "or_low": 210.5,
-    "or_open": 212.63999938964844,
-    "or_close": 216.22500610351562,
-    "atr": 12.0264,
-    "gap_pct": 4.27,
-    "news": null,
-    "skipped": true
-   }
-  ],
-  "entered": [
-   "WELL",
-   "ETR",
-   "TJX",
-   "TGT"
-  ],
-  "realized": -51.44,
-  "losses_in_row": 4,
+  "watchlist": [],
+  "entered": [],
+  "realized": 0.0,
+  "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": -0.0,
-  "last_ts": "2026-11-18T15:50:00-05:00",
+  "market_change_pct": null,
+  "last_ts": null,
   "log": [
-   "16:21 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "Stocks in play: TGT (8.04x), WELL (7.09x), ETR (7.05x), TJX (7.03x), TTWO (4.52x)",
-   "09:45 BUY 9 WELL @ $246.970, stop $244.430 (breakout above $246.830)",
-   "09:45 BUY 22 ETR @ $108.690, stop $107.580 (breakout above $108.620)",
-   "09:45 BUY 17 TJX @ $140.890, stop $138.850 (breakout above $140.800)",
-   "09:55 BUY 14 TGT @ $168.030, stop $165.250 (breakout above $167.930)",
-   "10:55 Skipped TTWO: not enough cash or risk room for a sensible size.",
-   "15:50 SELL 9 WELL @ $246.800 (End of day exit) net $-1.53",
-   "15:50 SELL 22 ETR @ $108.010 (End of day exit) net $-14.96",
-   "15:50 SELL 17 TJX @ $140.580 (End of day exit) net $-5.27",
-   "15:50 SELL 14 TGT @ $165.910 (End of day exit) net $-29.68",
-   "15:50 Day closed. Equity $9,812.87 (-51.44).",
-   "16:25 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {
-   "TJX": {
-    "pv": 1966197239.9095812,
-    "v": 13877787.0,
-    "low": 134.0500030517578,
-    "vwap": 141.6794507589417
-   },
-   "TTWO": {
-    "pv": 6534039434.259478,
-    "v": 29925001.0,
-    "low": 210.5,
-    "vwap": 218.34717513491404
-   },
-   "WELL": {
-    "pv": 1285149273.7672067,
-    "v": 5203831.0,
-    "low": 241.97999572753906,
-    "vwap": 246.96214649691865
-   },
-   "TGT": {
-    "pv": 1766834887.882146,
-    "v": 10517000.0,
-    "low": 159.9499969482422,
-    "vwap": 167.9979925722303
-   },
-   "ETR": {
-    "pv": 260425495.08351383,
-    "v": 2407904.0,
-    "low": 106.91999816894531,
-    "vwap": 108.15443434767907
-   }
-  },
-  "end_equity": 9812.87,
-  "reviewed": true
+   "16:25 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Day finished. Equity $9,812.87",
- "last_run": "2026-11-18T16:25:05.371414-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-19T16:25:01.279288-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
