@@ -1,6 +1,6 @@
 {
  "start_capital": 10000,
- "cash": 9767.06,
+ "cash": 9626.55,
  "created": "2026-11-10T15:25:56.794810-05:00",
  "positions": [],
  "daily": [
@@ -67,26 +67,141 @@
    "pnl": -45.81,
    "trades": 1,
    "market_change_pct": 3.14
+  },
+  {
+   "date": "2026-11-20",
+   "start_equity": 9767.06,
+   "end_equity": 9626.55,
+   "pnl": -140.51,
+   "trades": 4,
+   "market_change_pct": 3.35
   }
  ],
  "day": {
   "date": "2026-11-20",
-  "phase": "waiting_open",
+  "phase": "closed",
   "start_equity": 9767.06,
   "universe_size": 501,
-  "watchlist": [],
-  "entered": [],
-  "realized": 0.0,
-  "losses_in_row": 0,
-  "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "watchlist": [
+   {
+    "sym": "VMRK",
+    "rvol": 4.76,
+    "or_high": 64.0,
+    "or_low": 63.04010009765625,
+    "or_open": 63.34000015258789,
+    "or_close": 63.92499923706055,
+    "atr": 1.3179,
+    "gap_pct": 1.07,
+    "news": null
+   },
+   {
+    "sym": "VYLR",
+    "rvol": 4.66,
+    "or_high": 69.2300033569336,
+    "or_low": 68.19000244140625,
+    "or_open": 68.41999816894531,
+    "or_close": 68.88999938964844,
+    "atr": 2.6907,
+    "gap_pct": 0.96,
+    "news": null
+   },
+   {
+    "sym": "DECK",
+    "rvol": 3.31,
+    "or_high": 80.25,
+    "or_low": 78.98999786376953,
+    "or_open": 79.25,
+    "or_close": 80.19999694824219,
+    "atr": 3.8671,
+    "gap_pct": 0.38,
+    "news": null
+   },
+   {
+    "sym": "WSO",
+    "rvol": 3.22,
+    "or_high": 298.8143005371094,
+    "or_low": 291.4100036621094,
+    "or_open": 292.4100036621094,
+    "or_close": 298.8143005371094,
+    "atr": 12.1386,
+    "gap_pct": -0.58,
+    "news": null
+   },
+   {
+    "sym": "FAST",
+    "rvol": 3.06,
+    "or_high": 52.880001068115234,
+    "or_low": 52.25,
+    "or_open": 52.5,
+    "or_close": 52.84000015258789,
+    "atr": 1.2693,
+    "gap_pct": -0.34,
+    "news": null
+   }
+  ],
+  "entered": [
+   "WSO",
+   "FAST",
+   "VMRK",
+   "VYLR"
+  ],
+  "realized": -140.51,
+  "losses_in_row": 4,
+  "no_new_entries": true,
+  "market_change_pct": 3.35,
+  "last_ts": "2026-11-20T15:50:00-05:00",
   "log": [
-   "16:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "16:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: VMRK (4.76x), VYLR (4.66x), DECK (3.31x), WSO (3.22x), FAST (3.06x)",
+   "09:45 BUY 7 WSO @ $298.980, stop $292.910 (breakout above $298.814)",
+   "09:45 BUY 46 FAST @ $52.920, stop $52.280 (breakout above $52.880)",
+   "09:55 BUY 38 VMRK @ $64.050, stop $63.390 (breakout above $64.000)",
+   "10:55 SELL 7 WSO @ $292.760 (Stop loss) net $-43.54",
+   "10:55 SELL 46 FAST @ $52.250 (Stop loss) net $-30.82",
+   "11:00 BUY 35 VYLR @ $69.280, stop $68.190 (breakout above $69.230)",
+   "14:35 SELL 35 VYLR @ $68.150 (Stop loss) net $-39.55",
+   "14:35 3 losses in a row. Stopping for the day.",
+   "15:40 SELL 38 VMRK @ $63.350 (Stop loss) net $-26.60",
+   "15:50 Day closed. Equity $9,626.55 (-140.51).",
+   "16:05 Daily review done. See 'Learning from losses' on the dashboard."
+  ],
+  "tracks": {
+   "FAST": {
+    "pv": 381387580.18974674,
+    "v": 7357292.0,
+    "low": 50.59000015258789,
+    "vwap": 51.838037716832055
+   },
+   "VMRK": {
+    "pv": 414424372.1200407,
+    "v": 6482940.0,
+    "low": 63.04010009765625,
+    "vwap": 63.925375234082175
+   },
+   "DECK": {
+    "pv": 393773224.5959269,
+    "v": 5010872.0,
+    "low": 77.75,
+    "vwap": 78.58377236455588
+   },
+   "VYLR": {
+    "pv": 342431422.2828548,
+    "v": 4979274.0,
+    "low": 67.91000366210938,
+    "vwap": 68.77135547930376
+   },
+   "WSO": {
+    "pv": 249046452.25311276,
+    "v": 846495.0,
+    "low": 288.3699951171875,
+    "vwap": 294.2090056682116
+   }
+  },
+  "end_equity": 9626.55,
+  "reviewed": true
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-20T16:00:42.100516-05:00",
+ "status": "Day finished. Equity $9,626.55",
+ "last_run": "2026-11-20T16:05:06.335475-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
@@ -180,6 +295,42 @@
     "notes": [
      "Big opening gap: much of the move had already happened before the breakout."
     ]
+   },
+   {
+    "trade_id": 14,
+    "date": "2026-11-20",
+    "sym": "WSO",
+    "net": -43.54,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
+   },
+   {
+    "trade_id": 15,
+    "date": "2026-11-20",
+    "sym": "FAST",
+    "net": -30.82,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
+   },
+   {
+    "trade_id": 16,
+    "date": "2026-11-20",
+    "sym": "VYLR",
+    "net": -39.55,
+    "notes": [
+     "Late entry: breakouts after 10:30am tend to have less follow-through."
+    ]
+   },
+   {
+    "trade_id": 17,
+    "date": "2026-11-20",
+    "sym": "VMRK",
+    "net": -26.6,
+    "notes": [
+     "A normal stop-out: the breakout didn't follow through. Small, planned losses like this are part of the strategy."
+    ]
    }
   ],
   "changes": [
@@ -215,11 +366,19 @@
    },
    {
     "feature": "Entry time",
+    "label": "after 10:30",
+    "n": 1,
+    "win_rate": 0,
+    "avg_r": -1.04,
+    "net": -39.55
+   },
+   {
+    "feature": "Entry time",
     "label": "before 10:00",
-    "n": 12,
-    "win_rate": 25,
-    "avg_r": -0.37,
-    "net": -135.48
+    "n": 15,
+    "win_rate": 20,
+    "avg_r": -0.5,
+    "net": -236.44
    },
    {
     "feature": "Market at open",
@@ -232,18 +391,18 @@
    {
     "feature": "Market at open",
     "label": "market up",
-    "n": 11,
-    "win_rate": 18,
-    "avg_r": -0.47,
-    "net": -189.48
+    "n": 15,
+    "win_rate": 13,
+    "avg_r": -0.62,
+    "net": -329.99
    },
    {
     "feature": "Opening gap",
     "label": "gap 0\u20132%",
-    "n": 4,
-    "win_rate": 25,
-    "avg_r": -0.48,
-    "net": -80.34
+    "n": 6,
+    "win_rate": 17,
+    "avg_r": -0.67,
+    "net": -146.49
    },
    {
     "feature": "Opening gap",
@@ -264,26 +423,26 @@
    {
     "feature": "Opening gap",
     "label": "gapped down",
-    "n": 3,
-    "win_rate": 33,
-    "avg_r": 0.01,
-    "net": 37.51
+    "n": 5,
+    "win_rate": 20,
+    "avg_r": -0.41,
+    "net": -36.85
    },
    {
     "feature": "Overnight news",
     "label": "no news",
-    "n": 13,
-    "win_rate": 23,
-    "avg_r": -0.42,
-    "net": -232.94
+    "n": 17,
+    "win_rate": 18,
+    "avg_r": -0.56,
+    "net": -373.45
    },
    {
     "feature": "Relative volume",
     "label": "3\u20135\u00d7 volume",
-    "n": 4,
-    "win_rate": 25,
-    "avg_r": -0.59,
-    "net": -82.66
+    "n": 8,
+    "win_rate": 12,
+    "avg_r": -0.82,
+    "net": -223.17
    },
    {
     "feature": "Relative volume",
@@ -304,26 +463,26 @@
    {
     "feature": "Share price",
     "label": "over $20",
-    "n": 13,
-    "win_rate": 23,
-    "avg_r": -0.42,
-    "net": -232.94
+    "n": 17,
+    "win_rate": 18,
+    "avg_r": -0.56,
+    "net": -373.45
    },
    {
     "feature": "Stop distance",
     "label": "stop 1\u20132%",
-    "n": 9,
-    "win_rate": 11,
-    "avg_r": -0.47,
-    "net": -152.87
+    "n": 12,
+    "win_rate": 8,
+    "avg_r": -0.62,
+    "net": -249.84
    },
    {
     "feature": "Stop distance",
     "label": "stop over 2%",
-    "n": 4,
-    "win_rate": 50,
-    "avg_r": -0.3,
-    "net": -80.07
+    "n": 5,
+    "win_rate": 40,
+    "avg_r": -0.44,
+    "net": -123.61
    }
   ]
  }
