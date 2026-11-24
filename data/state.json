@@ -87,22 +87,111 @@
  ],
  "day": {
   "date": "2026-11-24",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 9626.55,
   "universe_size": 501,
-  "watchlist": [],
+  "watchlist": [
+   {
+    "sym": "DKS",
+    "rvol": 14.76,
+    "or_high": 155.77999877929688,
+    "or_low": 148.75999450683594,
+    "or_open": 148.75999450683594,
+    "or_close": 153.20230102539062,
+    "atr": 6.6264,
+    "gap_pct": 11.29,
+    "news": null
+   },
+   {
+    "sym": "BURL",
+    "rvol": 10.61,
+    "or_high": 256.30999755859375,
+    "or_low": 244.08999633789062,
+    "or_open": 245.0,
+    "or_close": 255.6925048828125,
+    "atr": 11.4629,
+    "gap_pct": 4.18,
+    "news": null
+   },
+   {
+    "sym": "DLTR",
+    "rvol": 10.18,
+    "or_high": 155.07000732421875,
+    "or_low": 147.8300018310547,
+    "or_open": 149.99000549316406,
+    "or_close": 154.9199981689453,
+    "atr": 6.0964,
+    "gap_pct": 7.83,
+    "news": null
+   },
+   {
+    "sym": "PINS",
+    "rvol": 7.57,
+    "or_high": 19.068599700927734,
+    "or_low": 16.989999771118164,
+    "or_open": 17.045000076293945,
+    "or_close": 19.065000534057617,
+    "atr": 0.8139,
+    "gap_pct": 0.86,
+    "news": null
+   },
+   {
+    "sym": "IQV",
+    "rvol": 6.65,
+    "or_high": 257.8900146484375,
+    "or_low": 250.0,
+    "or_open": 251.42999267578125,
+    "or_close": 257.32501220703125,
+    "atr": 8.3514,
+    "gap_pct": -0.19,
+    "news": null
+   }
+  ],
   "entered": [],
   "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": null,
-  "last_ts": null,
+  "market_change_pct": -0.64,
+  "last_ts": "2026-11-24T09:40:00-05:00",
   "log": [
-   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "Stocks in play: DKS (14.76x), BURL (10.61x), DLTR (10.18x), PINS (7.57x), IQV (6.65x)"
+  ],
+  "tracks": {
+   "IQV": {
+    "pv": 79988995.50409444,
+    "v": 313457.0,
+    "low": 250.0,
+    "vwap": 255.18331223770545
+   },
+   "BURL": {
+    "pv": 132328155.35329182,
+    "v": 530008.0,
+    "low": 244.08999633789062,
+    "vwap": 249.67199618362707
+   },
+   "DLTR": {
+    "pv": 145896841.46191913,
+    "v": 959606.0,
+    "low": 147.8300018310547,
+    "vwap": 152.0382755650956
+   },
+   "DKS": {
+    "pv": 180898232.42622378,
+    "v": 1193303.0,
+    "low": 148.75999450683594,
+    "vwap": 151.59455094491824
+   },
+   "PINS": {
+    "pv": 55524743.334719345,
+    "v": 2993510.0,
+    "low": 16.989999771118164,
+    "vwap": 18.548374094196895
+   }
+  }
  },
- "status": "Building the opening range",
- "last_run": "2026-11-24T09:40:05.779526-05:00",
+ "status": "Watching 5 stocks in play for breakouts",
+ "last_run": "2026-11-24T09:45:05.795017-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
