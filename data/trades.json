@@ -412,5 +412,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "Stop loss"
+ },
+ {
+  "id": 19,
+  "date": "2026-11-24",
+  "sym": "BURL",
+  "qty": 8,
+  "entry_time": "2026-11-24T09:45:00-05:00",
+  "entry_price": 256.45,
+  "exit_time": "2026-11-24T11:00:00-05:00",
+  "exit_price": 250.58,
+  "initial_stop": 250.71,
+  "fees": 0.0,
+  "gross": -46.96,
+  "net": -46.96,
+  "pct": -2.29,
+  "r": -1.02,
+  "rvol": 10.61,
+  "gap_pct": 4.18,
+  "stop_pct": 2.24,
+  "market_pct": -0.64,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]
