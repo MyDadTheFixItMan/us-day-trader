@@ -389,5 +389,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "Stop loss"
+ },
+ {
+  "id": 18,
+  "date": "2026-11-24",
+  "sym": "PINS",
+  "qty": 109,
+  "entry_time": "2026-11-24T09:45:00-05:00",
+  "entry_price": 19.09,
+  "exit_time": "2026-11-24T10:25:00-05:00",
+  "exit_price": 18.67,
+  "initial_stop": 18.68,
+  "fees": 0.0,
+  "gross": -45.78,
+  "net": -45.78,
+  "pct": -2.2,
+  "r": -1.02,
+  "rvol": 7.57,
+  "gap_pct": 0.86,
+  "stop_pct": 2.15,
+  "market_pct": -0.64,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]
