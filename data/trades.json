@@ -435,5 +435,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "Stop loss"
+ },
+ {
+  "id": 20,
+  "date": "2026-11-24",
+  "sym": "IQV",
+  "qty": 9,
+  "entry_time": "2026-11-24T09:45:00-05:00",
+  "entry_price": 258.03,
+  "exit_time": "2026-11-24T14:45:00-05:00",
+  "exit_price": 253.72,
+  "initial_stop": 253.85,
+  "fees": 0.0,
+  "gross": -38.79,
+  "net": -38.79,
+  "pct": -1.67,
+  "r": -1.03,
+  "rvol": 6.65,
+  "gap_pct": -0.19,
+  "stop_pct": 1.62,
+  "market_pct": -0.64,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "Stop loss"
  }
 ]

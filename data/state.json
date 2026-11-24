@@ -1,28 +1,8 @@
 {
  "start_capital": 10000,
- "cash": 5039.3,
+ "cash": 7322.78,
  "created": "2026-11-10T15:25:56.794810-05:00",
  "positions": [
-  {
-   "sym": "IQV",
-   "qty": 9,
-   "entry": 258.03,
-   "entry_time": "2026-11-24T09:45:00-05:00",
-   "stop": 253.85,
-   "initial_stop": 253.85,
-   "risk_ps": 4.18,
-   "high": 260.3599853515625,
-   "last": 254.1999969482422,
-   "fees": 0.0,
-   "rvol": 6.65,
-   "atr": 8.3514,
-   "stop_note": "initial",
-   "gap_pct": -0.19,
-   "stop_pct": 1.62,
-   "market_pct": -0.64,
-   "news_cat": null,
-   "news_headline": null
-  },
   {
    "sym": "DLTR",
    "qty": 14,
@@ -32,7 +12,7 @@
    "initial_stop": 152.11,
    "risk_ps": 3.05,
    "high": 156.88999938964844,
-   "last": 153.7550048828125,
+   "last": 154.24000549316406,
    "fees": 0.0,
    "rvol": 10.18,
    "atr": 6.0964,
@@ -194,11 +174,11 @@
    "IQV",
    "DLTR"
   ],
-  "realized": -92.74,
-  "losses_in_row": 2,
-  "no_new_entries": false,
+  "realized": -131.53,
+  "losses_in_row": 3,
+  "no_new_entries": true,
   "market_change_pct": -0.64,
-  "last_ts": "2026-11-24T14:40:00-05:00",
+  "last_ts": "2026-11-24T14:45:00-05:00",
   "log": [
    "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
    "Stocks in play: DKS (14.76x), BURL (10.61x), DLTR (10.18x), PINS (7.57x), IQV (6.65x)",
@@ -207,43 +187,45 @@
    "09:45 BUY 9 IQV @ $258.030, stop $253.850 (breakout above $257.890)",
    "10:05 BUY 14 DLTR @ $155.160, stop $152.110 (breakout above $155.070)",
    "10:25 SELL 109 PINS @ $18.670 (Stop loss) net $-45.78",
-   "11:00 SELL 8 BURL @ $250.580 (Stop loss) net $-46.96"
+   "11:00 SELL 8 BURL @ $250.580 (Stop loss) net $-46.96",
+   "14:45 SELL 9 IQV @ $253.720 (Stop loss) net $-38.79",
+   "14:45 3 losses in a row. Stopping for the day."
   ],
   "tracks": {
    "IQV": {
-    "pv": 395484452.01219183,
-    "v": 1541691.0,
+    "pv": 396892964.7783051,
+    "v": 1547238.0,
     "low": 250.0,
-    "vwap": 256.52640640192607
+    "vwap": 256.51707415297784
    },
    "BURL": {
-    "pv": 649371640.643336,
-    "v": 2542133.0,
+    "pv": 657781234.1016694,
+    "v": 2575182.0,
     "low": 244.08999633789062,
-    "vwap": 255.44361394283308
+    "vwap": 255.43096919039874
    },
    "DLTR": {
-    "pv": 576284170.3091737,
-    "v": 3734142.0,
+    "pv": 585657085.4447023,
+    "v": 3794936.0,
     "low": 147.8300018310547,
-    "vwap": 154.32840269844417
+    "vwap": 154.32594527146236
    },
    "DKS": {
-    "pv": 589386261.867569,
-    "v": 3829925.0,
+    "pv": 596961373.2913666,
+    "v": 3878486.0,
     "low": 148.75999450683594,
-    "vwap": 153.88976595300664
+    "vwap": 153.91608305183172
    },
    "PINS": {
-    "pv": 339439135.8315156,
-    "v": 17999224.0,
+    "pv": 341172703.6420351,
+    "v": 18092139.0,
     "low": 16.989999771118164,
-    "vwap": 18.858542781150767
+    "vwap": 18.857510637190835
    }
   }
  },
- "status": "Past the entry cut-off. Managing open trades until the close.",
- "last_run": "2026-11-24T14:45:06.028856-05:00",
+ "status": "Managing open trades only (no new entries today)",
+ "last_run": "2026-11-24T14:50:05.788984-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
