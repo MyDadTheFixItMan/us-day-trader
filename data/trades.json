@@ -458,5 +458,28 @@
   "news_cat": null,
   "news_headline": null,
   "reason": "Stop loss"
+ },
+ {
+  "id": 21,
+  "date": "2026-11-24",
+  "sym": "DLTR",
+  "qty": 14,
+  "entry_time": "2026-11-24T10:05:00-05:00",
+  "entry_price": 155.16,
+  "exit_time": "2026-11-24T15:50:00-05:00",
+  "exit_price": 154.26,
+  "initial_stop": 152.11,
+  "fees": 0.0,
+  "gross": -12.6,
+  "net": -12.6,
+  "pct": -0.58,
+  "r": -0.3,
+  "rvol": 10.18,
+  "gap_pct": 7.83,
+  "stop_pct": 1.97,
+  "market_pct": -0.64,
+  "news_cat": null,
+  "news_headline": null,
+  "reason": "End of day exit"
  }
 ]
