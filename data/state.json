@@ -91,11 +91,19 @@
    "pnl": -144.13,
    "trades": 4,
    "market_change_pct": -0.64
+  },
+  {
+   "date": "2026-11-25",
+   "start_equity": 9482.42,
+   "end_equity": 9482.42,
+   "pnl": 0.0,
+   "trades": 0,
+   "market_change_pct": -3.11
   }
  ],
  "day": {
   "date": "2026-11-25",
-  "phase": "trading",
+  "phase": "closed",
   "start_equity": 9482.42,
   "universe_size": 501,
   "watchlist": [],
@@ -107,12 +115,16 @@
   "last_ts": null,
   "log": [
    "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "09:40 S&P 500 -3.11% at the open: weak market, standing aside today."
+   "09:40 S&P 500 -3.11% at the open: weak market, standing aside today.",
+   "16:30 Day closed. Equity $9,482.42 (+0.00).",
+   "16:30 Daily review done. See 'Learning from losses' on the dashboard."
   ],
-  "tracks": {}
+  "tracks": {},
+  "end_equity": 9482.42,
+  "reviewed": true
  },
- "status": "Standing aside today: S&P 500 opened -3.11%",
- "last_run": "2026-11-25T16:25:05.698734-05:00",
+ "status": "Day finished. Equity $9,482.42",
+ "last_run": "2026-11-25T16:30:06.014091-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
