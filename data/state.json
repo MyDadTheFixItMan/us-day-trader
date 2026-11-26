@@ -123,8 +123,8 @@
   "end_equity": 9482.42,
   "reviewed": true
  },
- "status": "Day finished. Equity $9,482.42",
- "last_run": "2026-11-25T16:30:06.014091-05:00",
+ "status": "Market closed today",
+ "last_run": "2026-11-26T08:15:13.049096-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
