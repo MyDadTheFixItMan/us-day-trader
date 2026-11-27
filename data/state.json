@@ -103,7 +103,7 @@
  ],
  "day": {
   "date": "2026-11-27",
-  "phase": "waiting_open",
+  "phase": "trading",
   "start_equity": 9482.42,
   "universe_size": 501,
   "watchlist": [],
@@ -111,14 +111,16 @@
   "realized": 0.0,
   "losses_in_row": 0,
   "no_new_entries": false,
-  "market_change_pct": null,
+  "market_change_pct": 0.8,
   "last_ts": null,
   "log": [
-   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
-  ]
+   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
+   "No stock met the in-play rules today. No trades."
+  ],
+  "tracks": {}
  },
- "status": "Building the opening range",
- "last_run": "2026-11-27T09:40:06.303007-05:00",
+ "status": "Watching 0 stocks in play for breakouts",
+ "last_run": "2026-11-27T09:45:05.730812-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
