@@ -117,8 +117,8 @@
    "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
   ]
  },
- "status": "Morning scan done. Waiting for the 9:30 open.",
- "last_run": "2026-11-27T09:00:06.470790-05:00",
+ "status": "Building the opening range",
+ "last_run": "2026-11-27T09:30:06.225286-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
