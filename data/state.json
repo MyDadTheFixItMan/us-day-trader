@@ -102,29 +102,23 @@
   }
  ],
  "day": {
-  "date": "2026-11-25",
-  "phase": "closed",
+  "date": "2026-11-27",
+  "phase": "waiting_open",
   "start_equity": 9482.42,
   "universe_size": 501,
   "watchlist": [],
   "entered": [],
   "realized": 0.0,
   "losses_in_row": 0,
-  "no_new_entries": true,
-  "market_change_pct": -3.11,
+  "no_new_entries": false,
+  "market_change_pct": null,
   "last_ts": null,
   "log": [
-   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters.",
-   "09:40 S&P 500 -3.11% at the open: weak market, standing aside today.",
-   "16:30 Day closed. Equity $9,482.42 (+0.00).",
-   "16:30 Daily review done. See 'Learning from losses' on the dashboard."
-  ],
-  "tracks": {},
-  "end_equity": 9482.42,
-  "reviewed": true
+   "09:00 Scanned 1502 US shares; 500 pass the liquidity and volatility filters."
+  ]
  },
- "status": "Market closed today",
- "last_run": "2026-11-26T08:15:13.049096-05:00",
+ "status": "Morning scan done. Waiting for the 9:30 open.",
+ "last_run": "2026-11-27T09:00:06.470790-05:00",
  "learning": {
   "risk_multiplier": 0.5,
   "blocks": [],
